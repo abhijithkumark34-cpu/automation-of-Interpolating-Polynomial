@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main() {
+   int n;
+   printf("Enter the number of elements in X");
+   scanf("%d",&n);
+   
+   int x[n];
+   int y[n];
+   int xn=n-1;
+   int Xn[xn];
+   int temy[n];
+   
+for(int i = 0; i < n; i++) {
+    Xn[i] = 0;
+}
+  
+   printf("ENter the values for x");
+   for(int i=0;i<n;i++){
+       scanf("%d",&x[i]);
+       
+   }
+   printf("Enter the value for Y");
+   for(int i=0;i<n;i++){
+       scanf("%d",&y[i]);
+       temy[i]=y[i];
+       
+   }
+   int current =n;
+   //calculation starts
+   for(int k=0;k<n;k++){
+for(int i=0;i<current-1;i++){
+    Xn[i]=temy[i+1]-temy[i];
+}
+for(int i=0;i<current-1;i++){
+    printf("%d\n",Xn[i]);
+    
+}
+printf("\n\n");
+for(int i=0;i<current-1;i++){
+    temy[i]=Xn[i];
+}
+current--;
+
+
+   
+}
+return 0;
+}
