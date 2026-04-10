@@ -1,4 +1,4 @@
-Interpolating Polynomial Automation (C)
+ Interpolating Polynomial Automation (C)
 
 This repository is my attempt to understand and automate concepts from Mathematics Unit 4 – Interpolating Polynomials using C programming.
 
